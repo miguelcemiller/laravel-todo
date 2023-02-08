@@ -1,0 +1,440 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800;900&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Redacted+Script:wght@300;400;700&display=swap');
+
+:root {
+    --background: #fefefe;
+    --border-color: #d8d7d7;
+    --profile-image-size: 35px;
+    --text-primary-color: rgb(28, 28, 28);
+    --primary-color: #191919;
+    --width-content: 720px;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: var(--background);
+    font-family: "Poppins", sans-serif;
+    font-size: 12px;
+    font-weight: 400;
+    color: var(--text-primary-color);
+}
+
+/* navbar container */
+.navbar-container {
+    width: 100%;
+    height: 65px;
+    display: flex;
+    justify-content: center;
+    background-color: var(--background);
+    border-bottom: var(--border-color) 1px solid;
+    margin-bottom: 30px;
+}
+
+/* navbar items container */
+.navbar-items-container {
+    width: 100%;
+    max-width: var(--width-content);
+    height: 100%;
+
+    margin-left: 40px;
+    margin-right: 40px;
+}
+
+/* logo wrapper */
+.logo-wrapper {
+    font-family: 'Redacted Script';
+    font-weight: 400;
+    font-size: 40px;
+    color: var(--primary-color);
+    margin-bottom: 8px;
+}
+
+/* profile container */
+.profile-container {
+    gap: 10px;
+}
+
+/* profile image */
+.profile-image {
+    width: var(--profile-image-size);
+    height: var(--profile-image-size);
+    object-fit: cover;
+    border: 1px solid var(--border-color);
+    border-radius: 50%;
+}
+
+/* profile name logout container */
+.profile-username-logout-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 3px;
+}
+
+/* profile username */
+.profile-username {
+    font-size: 12px;
+    font-weight: 600;
+    color: var(--primary-color);
+}
+
+/* logout input */
+.logout {
+    border: none;
+    background: none;
+    font-family: "Poppins", sans-serif;
+    font-size: 10px;
+    font-weight: 600;
+    color: var(--primary-color);
+    opacity: 0.6;
+    cursor: pointer;
+    transition: opacity 0.1s ease-out;
+}
+
+.logout:hover {
+    opacity: 1;
+}
+
+/* items container */
+.items-container {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 30px;
+
+    padding-left: 40px;
+    padding-right: 40px;
+}
+
+/* item container */
+.item-container {
+    width: 100%;
+    max-width: var(--width-content);
+    height: 60px;
+    background-color: transparent;
+    border-top: 1px solid var(--border-color);
+    padding: 0px 20px;
+}
+
+.item-container:first-child {
+    border: none;
+}
+
+
+/* checkbox */
+input[type='checkbox'] {
+    width: 14px;
+    height: 14px;
+    accent-color: black;
+    cursor: pointer;
+}
+
+/* remember me container */
+.remember-me-container {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    margin-top: 10px;
+    gap: 6px;
+
+    font-size: 10px;
+    font-weight: 500;
+}
+
+/* label */
+/* label {
+    justify-self: left;
+} */
+
+/* text input */
+input[type='text'] {
+    flex-grow: 1;
+    font-family: 'Poppins', sans-serif;
+    font-size: 14px;
+    font-weight: 500;
+    color: var(--primary-color);
+    background-color: transparent;
+    padding: 0 20px;
+    border: none;
+}
+
+input[type='text']:focus {
+    outline: none;
+}
+
+/* delete */
+.delete-button-wrapper {
+    background: none;
+    outline: none;
+    border: none;
+}
+
+.delete {
+    width: 10px;
+    height: 10px;
+    cursor: pointer;
+    opacity: 1;
+}
+
+.delete:hover {
+    opacity: 0.6;
+}
+
+
+.new-item-container-container {
+    margin-left: 40px;
+    margin-right: 40px;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* new item container */
+.new-item-container {
+    width: 100%;
+    max-width: var(--width-content);
+    height: 40px;
+    background-color: #f3f3f3;
+    border-radius: 6px;
+    padding-right: 20px;
+    padding-left: 0px;
+}
+
+/* new item input text box */
+.new-item-container input[type='text'] {
+    font-size: 12px;
+    font-weight: 500;
+    color: var(--primary-color);
+}
+
+.new-item-container input[type='text']::placeholder {
+    font-size: 12px;
+    font-weight: 500;
+    color: var(--primary-color);
+    opacity: 0.6;
+}
+
+/* add */
+.add {
+    border: none;
+    background: none;
+    font-family: "Poppins", sans-serif;
+    font-size: 10px;
+    font-weight: 600;
+    color: var(--primary-color);
+    opacity: 0.6;
+    cursor: pointer;
+    transition: opacity 0.1s ease-out;
+}
+
+.add:hover {
+    opacity: 1;
+}
+
+/* save */
+.save {
+    border: none;
+    background: none;
+    font-family: "Poppins", sans-serif;
+    font-size: 10px;
+    font-weight: 600;
+    color: var(--primary-color);
+    opacity: 0.6;
+    cursor: pointer;
+    transition: opacity 0.1s ease-out;
+}
+
+.save:hover {
+    opacity: 1;
+}
+
+/* navbar register */
+.navbar-register {
+    width: 100%;
+    height: 65px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 30px;
+}
+
+/* form container */
+.form-container {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+/* register login form */
+.register-login-form {
+    width: 220px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+/* form add */
+.form-add {
+    width: 100%;
+    display: flex;
+    align-items: center;
+}
+
+/* update form */
+#update-form {
+    flex-grow: 1;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-right: 20px;
+}
+
+/* username input */
+input[name='username'] {
+    width: 100%;
+    height: 40px;
+    background-color: #f3f3f3;
+    padding: 0px 20px;
+    border-radius: 6px;
+    font-size: 12px;
+    font-weight: 500;
+    color: var(--primary-color);
+}
+
+input[name='username']::placeholder {
+    font-size: 12px;
+    font-weight: 500;
+    color: var(--primary-color);
+    opacity: 0.6;
+}
+
+/* password input */
+input[type='password'] {
+    width: 100%;
+    height: 40px;
+    background-color: #f3f3f3;
+    padding: 0px 20px;
+    border-radius: 6px;
+    font-family: 'Poppins', sans-serif;
+    font-size: 12px;
+    font-weight: 500;
+    color: var(--primary-color);
+    border: none;
+    margin-top: 10px;
+}
+
+input[type='password']::placeholder {
+    font-family: 'Poppins', sans-serif;
+    font-size: 12px;
+    font-weight: 500;
+    color: var(--primary-color);
+    opacity: 0.6;
+}
+
+input[type='password']:focus {
+    outline: none;
+}
+
+/* input submit */
+.submit {
+    width: 100%;
+    height: 40px;
+    background-color: var(--primary-color);
+    opacity: 1;
+    border: none;
+    border-radius: 6px;
+    font-family: "Poppins", sans-serif;
+    font-size: 12px;
+    font-weight: 500;
+    color: #fefefe;
+    margin-top: 20px;
+    cursor: pointer;
+    transition: opacity 0.2s ease-out;
+}
+
+.submit:hover {
+    background-color: var(--primary-color);
+    opacity: 0.75;
+}
+
+/* image container */
+.image-container {
+    width: 130px;
+    height: 130px;
+    border-radius: 50%;
+    background-color: #f7f7f7;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    transition: background-color 0.2s ease-out;
+    margin-bottom: 20px;
+    overflow: hidden;
+}
+
+.image-container:hover {
+    background-color: #f3f3f3;
+}
+
+/* image placeholder */
+.image-placeholder {
+    width: 30px;
+    height: 30px;
+}
+
+/* line */
+.line {
+    width: 100%;
+    height: 14px;
+    border-bottom: 1px solid var(--border-color);
+}
+
+/* links */
+a {
+    text-decoration: none;
+    font-size: 10px;
+    font-weight: 500;
+    color: var(--primary-color);
+    opacity: 0.6;
+    transition: opacity 0.2s ease-out;
+    margin-top: 10px;
+}
+
+a:hover {
+    opacity: 1;
+}
+
+
+/* utilities */
+.flex-row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.flex-col {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.hide {
+    display: none;
+}
+
+.show {
+    display: block;
+}
+
+.strikethrough {
+    text-decoration: line-through;
+}
